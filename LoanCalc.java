@@ -18,11 +18,16 @@ System.out.println("__________________________");
 
 public static void main(String[] args) {
 Scanner sCancer = new Scanner(System.in);
+Scanner newScan = new Scanner(System.in);
 System.out.println("Enter your payment:");
 int amount = sCancer.nextInt();
+System.out.println("Enter months to pay:");
+int month = newScan.nextInt();
 
 double interest = 10.0;
-int month = 3;
+//int month = 3;
+
+
 double interestAmount = (int)(amount/100 *interest);
 double finalAmount = amount - interestAmount;
 //int computation = (int)(amount*interest/100.0);
